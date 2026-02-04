@@ -70,7 +70,7 @@ h4 {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(2, 6, 23, 0.4) 0%, rgba(2, 6, 23, 1) 100%);
+    background: radial-gradient(circle at 50% 50%, rgba(2, 6, 23, 0.2) 0%, rgba(2, 6, 23, 0.8) 100%);
 }
 
 .hero>* {
@@ -276,8 +276,27 @@ section {
 
 .btn:hover {
     background: var(--white);
+    color: var(--bg);
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--bg);
+}
+
+.footer {
+    padding: 100px 20px;
+    text-align: center;
+    border-top: 1px solid var(--glass-border);
+    background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
 }
 
 @media (max-width: 768px) {
